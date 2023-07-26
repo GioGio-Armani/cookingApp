@@ -1,11 +1,12 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
 
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        {/* <Route path="/" element={} /> */}
+        <Route path="/" element={<Home />} />
         {/* /*path * fonctionne si jamais on a pas de route qui correspond */}
         {/* <Route path="*" element={<Home />} /> */}
       </Routes>
