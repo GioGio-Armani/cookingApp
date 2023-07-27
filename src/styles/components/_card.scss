@@ -1,0 +1,33 @@
+.mealContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    img{
+        width: 100%;
+        height: 480px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    .meal-instruction-container{
+        width: 100%;
+        overflow: hidden;
+        margin: 20px 0;
+
+        .meal-instruction {
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+
+    iframe{
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+}
